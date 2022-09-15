@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentBerita">
+
+    <fragment
+        android:id="@+id/fragmentBerita"
+        android:name="com.example.chapter4_topic2.tugas_latihandb.FragmentBerita"
+        android:label="FragmentBerita" >
+        <action
+            android:id="@+id/action_fragmentBerita_to_detailBeritaFragment"
+            app:destination="@id/detailBeritaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBeritaFragment"
+        android:name="com.example.chapter4_topic2.tugas_latihandb.DetailBeritaFragment"
+        android:label="DetailBeritaFragment" >
+        <argument
+            android:name="dataBerita"
+            app:argType="string" />
+    </fragment>
+</navigation>

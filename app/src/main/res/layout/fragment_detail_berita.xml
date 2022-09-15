@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="dataBerita"
+            type="com.example.chapter4_topic2.tugas_latihandb.Berita" />
+    </data>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".tugas_latihandb.DetailBeritaFragment">
+
+        <ImageView
+            android:id="@+id/gambarBerita"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            app:ImageResource="@{dataBerita.img}" />
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/gambarBerita"
+            android:text="@{dataBerita.judul}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@{dataBerita.penulis}"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/title"
+            android:id="@+id/penulisBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@{dataBerita.tanggal}"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/penulisBerita"
+            android:id="@+id/tanggalNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:paddingTop="10dp"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/tanggalNews"
+            android:text="@{dataBerita.content}"
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</layout>
