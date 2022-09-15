@@ -61,16 +61,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
+            android:layout_below="@+id/tanggalBerita"
             android:id="@+id/thumbDown"
             android:layout_toEndOf="@+id/thumbUp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/ic_baseline_thumb_down_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <ImageView
+            android:layout_below="@+id/tanggalBerita"
             android:layout_toEndOf="@+id/thumbDown"
             android:paddingStart="5dp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/ic_baseline_share_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

@@ -18,6 +18,6 @@
         android:label="DetailBeritaFragment" >
         <argument
             android:name="dataBerita"
-            app:argType="string" />
+            app:argType="com.example.chapter4_topic2.tugas_latihandb.Berita" />
     </fragment>
 </navigation>

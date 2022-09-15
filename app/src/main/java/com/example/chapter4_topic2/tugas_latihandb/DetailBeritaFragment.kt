@@ -23,11 +23,7 @@ class DetailBeritaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var getBerita = arguments?.getSerializable("dataBerita") as Berita
-        binding.gambarBerita.setImageResource(getBerita.img)
-        binding.title.text = getBerita.judul
-        binding.penulisBerita.text = getBerita.penulis
-        binding.content.text = getBerita.content
-        binding.tanggalNews.text = getBerita.tanggal
+        binding.dataBerita = getBerita
     }
 
 
